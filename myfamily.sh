@@ -1,1 +1,1 @@
-curl  https://raw.githubusercontent.com/kigiri/superhero-api/master/api/all.json | jq ' .[] | select  ( .id == '$HERO_ID') .connections.relatives' | cut -d '"' -f2
+curl  https://raw.githubusercontent.com/kigiri/superhero-api/master/api/all.json | jq --arg ID_num "$HERO_ID" '.[] | select( .id ==($ID_num|tonumber)) | .connections.relatives' | sed 's/"//g'
