@@ -7,8 +7,8 @@ func main() {
 	int := 1
 
 	if int >= 0 {
-		z01.PrintRune("true")
+		z01.Println("true")
 	} else if int <= 0 {
-		z01.PrintRune("false")
+		z01.Println("false")
 	}
 }
