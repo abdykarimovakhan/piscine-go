@@ -1,5 +1,5 @@
 package main
-impory "fmt"
+import "fmt"
 
 func main() {
 fmt.Println ("abcdefghijklmnopqrstuvwxyz")
