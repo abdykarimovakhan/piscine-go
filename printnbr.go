@@ -1,15 +1,15 @@
-package piscine
+package main
 
 import "github.com/01-edu/z01"
 
-func PrintNbr(x int) {
+func main(x int) {
 	if x < 0 {
 		z01.PrintRune('-')
 	}
 	SetNbr(x)
 }
 
-func SetNbr(x int) {
+func main(x int) {
 	h := '0'
 	if x == 0 {
 		z01.PrintRune(h)
